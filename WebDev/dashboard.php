@@ -8,7 +8,7 @@ session_start();
 $authController = new AuthController();
 if (!$authController->check()) {
     // Redirect to login
-    header('Location: /login.php');
+    header('Location: login.php');
     exit();
 }
 

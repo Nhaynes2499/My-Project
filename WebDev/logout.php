@@ -12,6 +12,6 @@ if ($authController->check()) {
 }
 
 // Redirect to login
-header('Location: /login.php');
+header("location: login.php");
 
 ?>

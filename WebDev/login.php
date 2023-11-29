@@ -8,7 +8,7 @@ session_start();
 $authController = new AuthController();
 if ($authController->check()) {
     // Redirect to dashboard
-    header('Location: /dashboard.php');
+    header('Location:dashboard.php');
     exit();
 }
 
@@ -28,7 +28,7 @@ if (
     if (!$isFound) $error = "Invalid email/password";
     // Redirect to dashboard
     else {
-      header('Location: /dashboard.php');
+      header('Location: dashboard.php');
       exit();
     }
 }

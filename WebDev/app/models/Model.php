@@ -9,7 +9,7 @@ class Model
     protected static function getMysqli()
     {
         return new mysqli(
-          "localhost", "root", "root", "user_management_system"
+          "localhost", "root", "", "user_management_system"
         );
     }
 }

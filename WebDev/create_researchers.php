@@ -8,11 +8,11 @@ session_start();
 $authController = new AuthController();
 if (!$authController->check()) {
     // Redirect to login
-    header('Location: /login.php');
+    header('Location: login.php');
     exit();
 } elseif (!$authController->hasAccessLevel('Research Group Manager')) {
     // Redirect to dashboard
-    header('Location: /dashboard.php');
+    header('Location: dashboard.php');
     exit();
 }
 
@@ -56,7 +56,7 @@ if (
     // Logging out
     $authController->logout();
     // Redirecting to login page
-    header('Location: /login.php');
+    header('Location: login.php');
     exit();
 }
 

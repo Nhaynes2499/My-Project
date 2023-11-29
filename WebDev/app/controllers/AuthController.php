@@ -26,7 +26,7 @@ class AuthController
      */
     public function logout()
     {
-        unset($_SESSION["currentUserId"]);
+        session_destroy();
     }
 }
 
